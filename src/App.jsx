@@ -17,6 +17,7 @@ import StateUp from './component/state-up/index.jsx'
 import BlogPost from './component/posts/index.jsx'
 import Product from './component/product/index.jsx'
 import Counter from './component/counter/index.jsx'
+import Login from './component/login/index.jsx'
 
 
 const profile = {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/counter",
     element: <Counter />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
   {
     path: "/youtube",
@@ -63,7 +68,8 @@ function App() {
     <>
       {/* <ThemeContext.Provider value={mode}> */}
       {/* <StateUp /> */}
-      <BlogPost />
+      {/* <BlogPost /> */}
+
       {/* <Product name='Dhanus' /> */}
       <RouterProvider router={router} />
       {/* <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}>
