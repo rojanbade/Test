@@ -3,7 +3,6 @@ import './App.css'
 import { Calculator, Paper } from './component/calculator/calculator'
 import Avatar from './component/shared-component/card/Avatar'
 import Youtube from './component/youtube'
-import Image from './assets/KMC_Logo.jpg'
 import { useContext, useState, useRef } from 'react'
 import { ThemeContext } from './context/themeContext'
 import {
@@ -81,6 +80,8 @@ function App() {
         {/* <BlogPost /> */}
 
         <BlogPost />
+
+        <h3>This is a test application.</h3>
 
         {/* <PostData /> */}
 
