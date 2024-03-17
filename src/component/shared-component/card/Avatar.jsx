@@ -11,21 +11,21 @@ function Avatar(props) {
     const [phone, setPhone] = useState()
     const [id, setId] = useState(1)
 
-    function handleIdChange() {
-        setId(id++)
-    }
+    // function handleIdChange() {
+    //     setId(id++)
+    // }
 
-    useEffect(() => {
-        axios.get(`https://post/${id}`).then().catch()
-    }, [id])
+    // useEffect(() => {
+    //     axios.get(`https://post/${id}`).then().catch()
+    // }, [id])
 
-    useEffect(() => {
-        map(lat, lan)
-    }, [lat, lan])
+    // useEffect(() => {
+    //     map(lat, lan)
+    // }, [lat, lan])
 
-    useEffect(() => {
-        document.title(name, age)
-    })
+    // useEffect(() => {
+    //     document.title(name, age)
+    // })
     return (
         <div>
             <img src={props.user.imageUrl} alt="avatar" style={{ width: '60px', height: '60px' }} />
