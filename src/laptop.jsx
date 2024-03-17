@@ -32,7 +32,7 @@ class Laptop extends React.Component {
             <>
                 <Forms />
                 {/* <Forms /> */}
-                <Users name='Ajay khadgi' passion={Passions} />
+                {/* <Users name='Ajay khadgi' passion={Passions} /> */}
             </>
         )
     }

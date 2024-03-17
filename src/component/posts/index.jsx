@@ -7,10 +7,14 @@ const BlogPost = () => {
     // const [posts, setPosts] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
 
-    const posts = useSelector((state) => state.product.data)
+    // const posts = useSelector((state) => state.product.data)
     const dispatch = useDispatch()
 
-    console.log(posts)
+    // console.log(posts)
+
+    const fetchData = () => {
+        // dispatch(getPosts())
+    }
 
     // const fetchData = async () => {
     //     try {
@@ -42,9 +46,10 @@ const BlogPost = () => {
     return (
         <div>
             <h1>Blog post</h1>
-            <button onClick={() => dispatch(getProduct())}>Get data</button>
+            {/* <button onClick={() => dispatch(getProduct())}>Get data</button> */}
+            <button onClick={fetchData}>Get data</button>
 
-            {
+            {/* {
                 isLoading ? <p style={{ color: 'tomato' }}>Loading</p> :
                     posts?.map((post) => {
                         return (
@@ -55,7 +60,7 @@ const BlogPost = () => {
                             </Fragment>
                         )
                     })
-            }
+            } */}
         </div>
     )
 }

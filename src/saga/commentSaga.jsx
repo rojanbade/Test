@@ -1,7 +1,6 @@
 import { call, put, takeEvery } from 'redux-saga/effects'
 
 function* fetchComment() {
-    console.log('saga working')
     // try {
     //     const user = yield call(Api.fetchComment)
     //     yield put({ type: 'COMMENT_FETCH_SUCCEEDED', user: user })

@@ -1,28 +1,28 @@
 import { useState } from "react";
+import PropTypes from 'prop-types'
 
 function Product(props) {
     const [age, setAge] = useState(20)
-    const [firstName, setFirstName] = useState('')
 
     const handleChange = () => {
-        setAge(30)
+        setAge((prevState) => prevState + 1)
     }
+
     return (
         <div>
-            <div>
-                <input type="text" />
-                <input type="checkbox" /><label>Only show products in stock</label>
 
-            </div>
+            {props.name}
+            <br />
+            {age}
+            <br />
 
-            <table>
-                {props.name}:
-                {age}
-            </table>
             <button onClick={handleChange}>Change age</button>
-
         </div>
     )
+}
+
+Product.propTypes = {
+    name: PropTypes.string
 }
 
 export default Product

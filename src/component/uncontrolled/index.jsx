@@ -8,7 +8,6 @@ class Uncontrolled extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.fileInput.current.files[0])
         alert('Name:' + this.fileInput.current.files[0].name)
     }
 

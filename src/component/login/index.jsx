@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../../context/themeContext'
+import './login.css'
 
 const Login = () => {
+    const theme = useContext(ThemeContext);
+
     return (
-        <form>
+        <form className={`form-${theme}`}>
             <h1>Login</h1>
             <label>Email</label>
             <input type='text' />
